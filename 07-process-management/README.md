@@ -33,20 +33,20 @@ A process is an instance of a running program. Linux provides multiple utilities
 - `top` – Interactive process viewer
 - `htop` – User-friendly process viewer (requires installation)
 - `nice -n 10 command` – Run a command with a specific priority
-- `renice -n -5 -p PID` – Change priority of an existing process
+- `renice -n -5 -p PID` – Change priority of an existing process 
 
-### Miscelleneous
-- `top` – Interactive process viewer
-- `htop` – User-friendly process viewer (requires installation)
-- `nice -n 10 command` – Run a command with a specific priority
-- `renice -n -5 -p PID` – Change priority of an existing process  
-
-### Daemon Process Management
+### Micellenous
 - `ps aux | grep java | grep -v grep` – this will give only the running java process. -v means do not match with word grep
 - `kill <id>`
 - `vmstat` 
 - `free -m`
-- - `free -h` - human readable format
+- `free -h` - human readable format
+
+### Daemon Process Management
+- `systemctl list-units --type=service` – List all system daemons
+- `systemctl start service-name` – Start a daemon/service
+- `systemctl stop service-name` – Stop a daemon/service
+- `systemctl enable service-name` – Enable a service at startup
 
 ## Viewing Process Details
 ### Using `ps`
