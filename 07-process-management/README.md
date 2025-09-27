@@ -22,7 +22,7 @@ A process is an instance of a running program. Linux provides multiple utilities
 - `renice -n 10 -p PID` – Lower priority of a process
 - `renice -n -5 -p PID` – Increase priority of a process (requires root)
 
-### Background & Foreground Processes
+### Background & Foreground Processes.
 - `command &` – Run a command in the background
 - `jobs` – List background jobs
 - `fg %jobnumber` – Bring a job to the foreground
