@@ -42,6 +42,16 @@ A process is an instance of a running program. Linux provides multiple utilities
 - `free -m`
 - `free -h` - human readable format
 
+### Disk Utilization
+- `df -h` – disk space
+- `du -sh` – total folder space of current folder
+- `du -sh *` – folder space of per folder in current dir
+
+### Important commands
+- `cpu` – nproc, htop
+- `mem` – htop, free -h
+- `disk` – df -h, du -sh *
+
 ### Daemon Process Management
 - `systemctl list-units --type=service` – List all system daemons
 - `systemctl start service-name` – Start a daemon/service
